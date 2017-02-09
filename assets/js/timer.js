@@ -316,7 +316,7 @@
             var roundNumber = Math.floor(rn/2) + 1;
             this.notifyForRound(roundNumber, current.round.type);
             if(current.round.type == 'rest'){
-               this.notify('Breathe!');
+               this.notify('Recover!');
                if(rn != 0){
                   this.sounds.play('end-round');
                }
