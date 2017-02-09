@@ -33,7 +33,14 @@ color:#fff;
 font-weight: 600;
 font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
-
+.video{
+	padding-top: 50px;
+	position: relative;
+}
+li{
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+}
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
@@ -129,6 +136,10 @@ font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 @media (min-width: 768px) {
 	.section { padding-top:80px;}
+	.col-sm-offset-3{
+		margin-left: 27%;
+	}
+	]
 }
 /* Show one of sections */
 #head {
