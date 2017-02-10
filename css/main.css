@@ -29,7 +29,7 @@ p2{
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 p{
-color:#fff;
+color:#FFF;
 font-weight: 600;
 font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
@@ -39,7 +39,8 @@ font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 li{
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	color: #FFFFFF;
+	color:#FFF;
+	font-weight: bolder;
 }
 /********************************************************/
 /*                    Navigation bar                    */
