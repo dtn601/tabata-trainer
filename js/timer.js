@@ -316,16 +316,16 @@
             var roundNumber = Math.floor(rn/2) + 1;
             this.notifyForRound(roundNumber, current.round.type);
             if(current.round.type == 'rest'){
-               this.notify('Recover!');
+               this.notify('REST!');
                if(rn != 0){
                   this.sounds.play('end-round');
                }
             }else{
-               this.notify('Push It!');
+               this.notify('WORK!');
                this.sounds.play('start');
             }
          }else{
-            this.notify('All Done!');
+            this.notify('ALL DONE!!');
             this.sounds.play('end');
             this.stop();
          }
@@ -341,7 +341,7 @@
             self.start();
          }else{
             self.stop();
-            self.notify('Stopped!');
+            self.notify('STOPPED!');
          }
       });
 
@@ -355,12 +355,12 @@
                   self.start();
                }else{
                   self.stop();
-                  self.notify('Stopped!');
+                  self.notify('STOPPED!');
                }
                break;
             case 112:
                self.stop();
-               self.notify('Stopped!');
+               self.notify('STOPPED!');
                break;
             case 114:
                self.start();
