@@ -57,6 +57,8 @@
       return n > 9 ? n+'':'0'+n;
    };
 
+
+
    var TBTimer = function(config){
       var self = this;
       this.resolution = config.resolution || 10;
@@ -125,6 +127,9 @@
           }
       };
 
+
+
+
       $(document).click(function(){
           self.loadSounds();
       });
@@ -150,6 +155,7 @@
          console.log('Sounds available');
          this.sounds.soundsAvailable = true;
       };
+
 
       this.getValues = function(){
          var rounds = $('.input-rounds').val();
@@ -209,6 +215,7 @@
          return this.specs;
       };
 
+
       this.start = function(){
          if(this.running){
              return;
@@ -246,6 +253,8 @@
             return {s:schedules, r:rs};
          }
       };
+
+
       this.stop  = function(){
          this.running = false;
          $('.timer-start').val('Start');
@@ -258,6 +267,7 @@
          this.rounds = [];
          this.updateDisplay(0);
 
+
       };
       this.notify = function(message){
          $('.global-notification').html(message);
@@ -265,6 +275,8 @@
             $('.overlay-container').delay(1000).fadeOut('slow');
          });
       };
+
+
       this.updateDisplay = function(ms){
          var tm = convertMillis(ms);
          this.displayEl.innerHTML =
@@ -272,6 +284,7 @@
             pad(tm.seconds) + ':' +
             pad(Math.floor(tm.millis/10));
       };
+
 
       this._doRound = function(rn){
          if(!this.running){
