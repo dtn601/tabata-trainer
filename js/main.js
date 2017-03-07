@@ -1,22 +1,3 @@
-var current_item = 0;
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
-var section_hide_time = 1300;
-var section_show_time = 1300;
-
-jQuery(document).ready(function($) {
-
-	$("a", '.mainmenu').click(function()
-	{
-		if( ! $(this).hasClass('active') ) {
-			current_item = this;
-
-			$('.section:visible').fadeOut( section_hide_time, function() {
-				$('a', '.mainmenu').removeClass( 'active' );
-				$(current_item).addClass( 'active' );
-				var new_section = $( $(current_item).attr('href') );
-				new_section.fadeIn( section_show_time );
-			} );
-		}
-		return false;
-	});
-});
+},{}]},{},[1])
